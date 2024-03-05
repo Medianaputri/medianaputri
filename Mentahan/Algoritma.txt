@@ -1,0 +1,20 @@
+Algoritma 
+1. Halaman register
+2. Opsi sebagai admin atau user?
+3. Jika user hanya bisa liat sistem informasi sekolah
+4. Jika admin bisa mengubah isi sistem informasi sekolah 
+5. Admin melakukan register, masukan email dan password yang benar
+6. Tampilan halaman login
+7. Admin login, masukan username dan password yang sesuai saat melakukan register
+8. Login berhasil?
+9. Jika iya masuk ke halaman web tampilan "WELCOME TO RPL 5"
+10. Jika tidak login ulang 
+11. Halaman sistem informasi sekolah 
+12. Admin klik isi data atau tambah data, siswa ataupun guru
+13. Menampilkan output tambah data
+14. Update data guru dan siswa?
+15. Jika iya Data siswa dan guru update terbaru 
+16. Jika tidak balik ke halaman web
+17. Admin crud table data siswa atau guru
+18. Isi table terhapus ataupun di edit
+19. Selesai

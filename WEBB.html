@@ -1,0 +1,684 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Sekolah</title>
+  </head>
+  <style>
+    
+            .container {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              padding: 5px;
+            }
+
+            .text {
+              max-width: 200px; /* Sesuaikan lebar maksimum teks sesuai kebutuhan */
+              text-align: center; 
+            }
+
+            body {
+              font-family: 'Times New Roman', Times, serif;
+              margin: 0;
+              padding: 0;
+              background-image: url(uuu.jpg);
+            }
+
+            header {
+              background-color: gainsboro;
+              color: black;
+              text-align: center;
+            }
+
+            nav {
+              background-color: white;
+              color: white;
+              padding: 10px;
+              text-align: center;
+            }
+
+            section {
+              max-width: 900px;
+              margin: 20px auto;
+              padding: 10px;
+              background-color: white;
+              border-radius: 10px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            }
+            
+            .dashboard-item {
+              margin-bottom: 80px;
+              padding: 40px;
+              background-color: white;
+              border-radius: 8px;
+              text-align: center;
+            }
+
+            h2{
+              font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+
+            footer {
+              background-color: gainsboro;
+              color: black;
+              text-align: center;
+              padding: 0em;
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+            }
+
+            li {
+              text-align: left;
+            }
+
+    
+         .teacher-list {
+             list-style: none;
+             padding: 0;
+             margin: 0;
+         }
+ 
+         .teacher-list li {
+             margin-bottom: 20px;
+             display: flex;
+             align-items: center;
+         }
+ 
+         .teacher-info {
+             margin-left: 20px;
+         }       
+         
+         .photo-album {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;  
+        }
+
+          justify-conte{
+          justify-content: center;
+          gap: 20px;
+          }
+
+        .event {
+            max-width: 300px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 3px solid #ccc; /* Increase border width */
+            margin: 10px;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+        }
+
+        .event h3 {
+            padding: 10px;
+            margin: 10;
+            background-color: palegoldenrod;
+        }
+
+          col{
+            color: #fff;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center; /* Center the images horizontally */
+            align-items: center; /* Center the images vertically */
+            flex-wrap: wrap; /* Allow images to wrap */
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .image-container img {
+            width: 200%; /* Adjust the width as needed */
+            max-width: 250px; /* Set a maximum width to prevent images from becoming too large */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure the image covers the entire container */
+            border-radius: 5px;
+            
+        }
+
+        .image-container img:hover {
+        opacity: 0.7;
+
+        }
+
+  </style>
+  <body>
+    <header>
+        <div class="container">
+            <img src="Logo5.png"  alt="" width="150" height="150">
+        </div>
+      <h2>SMK NEGERI 5 KOTA BEKASI</h2>
+      <h1>REKAYASA PERANGKAT LUNAK</h1>
+      <nav>
+        <a href="#" id="home-link">Home</a> |
+        <a href="#" id="tentang-link">Tentang</a> |
+        <a href="#" id="courses-link">Mata Pelajaran</a> | 
+        <a href="#" id="events-link">Events</a> |
+        <a href="#" id="gurus-link">Data Guru</a> | 
+        <a href="#" id="siswas-link">Data Siswa</a>| 
+        <a href="#" id="jadwals-link">Jadwal Pelajaran</a>
+      </nav>
+      </header>
+
+      <section id="home" class="dashboard-item">
+        <marquee behavior="scroll" direction="left">
+          <h1>WELCOME TO RPL 5</h1>
+        </marquee>
+        <p>
+          Ini adalah tampilan utama dari dashboard jurusan Rekayasa Perangkat
+          Lunak (RPL).
+        </p>
+      </section>
+      
+      <section id="tentang" class="tentang-item" style="display: none">
+        <h2>Tentang RPL</h2>
+        <p>
+            RPL adalah singkatan dari Rekayasa Perangkat Lunak dan merupakan sebuah jurusan yang ada di Sekolah Menengah Kejuruan (SMK). 
+            RPL adalah sebuah jurusan yang mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk pembuatan, 
+            pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas.
+
+            Bukan hanya itu, RPL juga berkaitan dengan software komputer mulai dari pembuatan website, 
+            aplikasi, game dan semua yang berkaitan dengan pemrograman dengan menguasai bahasa pemrograman tersebut.
+        </p>
+
+        <h3>Apa saja si keunggulan dari jurusan RPL?</h3>
+        <ul>
+          <li>Mampu bekerja di berbagai bidang karena sudah dibekali dengan berbagai ilmu dan pengetahuan.</li>
+          <li>Dalam melakukan kerja lapangan akan lebih mudah karena saat pembelajaran sudah sering melakukan kerja praktek.</li>
+          <li>Pekerjaan nya yang relatif mudah dan santai, dapat dikerjakan dimanapun dan kapanpun menggunakan koneksi tentunya.</li>
+          <li>Mengerti akan fungsi dari komponen komputer.</li>
+        </ul>
+        </section>
+
+      <section id="courses" class="mapel" style="display: none">
+        <h2 >Mata Pelajaran RPL</h2>
+        <ul>
+          <li>Pemograman Dasar (PD)</li>
+          <li>Basis Data (BD)</li>
+          <li>Dasar Desain Grafis (DDG)</li>
+          <li>Informatika</li>
+          <li>Internet Of Thinks (IOT)</li>
+          <li>Pemrograman Berbasis Object (PBO)</li>
+          <li>Produk Kreatif dan Kewirausahaan (PKK)</li>
+          <li>Pemrograman Web dan Perangkat Bergerak (PWEB)</li>
+        </ul>
+      </section>
+
+      <section id="events" class="dashboard-item" style="display: none;">
+    <h2>Event Jurusan RPL</h2>
+    <div class="photo-album">
+        <div class="event">
+            <h3>A. Pentas Seni RPL "Algorhytm Of Creativity"</h3>
+            <div class="image-container">
+                <a href="pensi1.jpg"><img src="pensi1.jpg" alt="Algorhytm Of Creativity"></a>
+                <a href="pensi2.jpg" ><img src="pensi2.jpg" alt=""></a>
+                <a href="pensi3.jpg" ><img src="pensi3.jpg" alt=""></a>
+            </div> 
+        </div>
+        <div class="event">
+            <h3>B. Ketarunaan Industri RPL Samsung</h3>
+            <div class="image-container">
+                <a href="ketarunaan.jpg" ><img src="ketarunaan.jpg" alt=""></a>
+                <a href="TARUNA1.jpg" ><img src="TARUNA1.jpg" alt=""></a>
+                <a href="TARUNA.jpg" ><img src="TARUNA.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="gurus" class="dashboard-item" style="display: none">
+          <h2>PROFIL GURU</h2>
+          <ul class="teacher-list">
+              <li>
+                  <img src="YULI SUPRIYANTO.jpg" alt="Yuli Supriyanto" width="100" height="100">
+                  <div class="teacher-info">
+                      <h3>Yuli Supriyanto, S.KOM, M.Pd.</h3>
+                      <p>Jabatan: Kepala Jurusan</p>
+                      <p>Guru mapel: Basis Data, Pemrograman WEB</p>
+                  </div>
+              </li>
+              <li>
+                  <img src="ratnawati.jpg" alt="Ratnawati" width="100" height="100">
+                  <div class="teacher-info">
+                      <h3>Ratnawati, S.T., M.Pd.</h3>
+                      <p>Jabatan: Waka HUBIN</p>
+                      <p>Guru mapel: Basis Data, Pemrograman WEB</p>
+                  </div>
+              </li>
+              <li>
+                  <img src="RIZKY.jpg" alt="Rizqy SGS" width="100" height="100">
+                  <div class="teacher-info">
+                      <h3>Rizqy Sopiyan, S.T</h3>
+                      <p>Jabatan: Bendahara</p>
+                      <p>Guru mapel: PKK</p>
+                  </div>
+              </li>
+              <li>
+                  <img src="Gustavianto.jpg" alt="Gustavianto" width="100" height="100">
+                  <div class="teacher-info">
+                      <h3>Gustavianto Nusantoro, M.KOM</h3>
+                      <p>Jabatan: -</p>
+                      <p>Guru mapel: Pemrograman WEB</p>
+                  </div>
+              </li>
+              <li>
+                <img src="yuyus.jpg" alt="yuyus" width="100" height="110">
+                <div class="teacher-info">
+                    <h3>Yuyus Purnama, S.T.</h3>
+                    <p>Jabatan: -</p>
+                    <p>Guru mapel: HHPS </p>
+                </div>
+            </li>
+            <li>
+              <img src="Muchlis.jpg" alt="Muchlis" width="100" height="110">
+                <div class="teacher-info">
+                    <h3>Ahmad Muchlis Fathurrahman, S.Kom.</h3>
+                    <p>Jabatan: -</p>
+                    <p>Guru mapel: Pemograman WEB </p>
+                </div>
+            </li>
+            <li>
+              <img src="gusdar.jpg" alt="gusdar" width="100" height="110">
+              <div class="teacher-info">
+                  <h3>Agus Darsono S.Kom.</h3>
+                  <p>Jabatan: Kepala Bengkel</p>
+                  <p>Guru mapel: Pemograman Berorientasi Object </p>
+              </div>
+            </li>
+            <li>
+              <img src="jaya.jpg" alt="jaya" width="100" height="110">
+              <div class="teacher-info">
+                  <h3>M. JayaWijaya</h3>
+                  <p>Jabatan: Toolman </p>
+                  <p>Guru mapel: - </p>
+              </div>
+            </li>
+          </ul>
+
+          <section id="siswas" class="dashboard-item" style="display: none">
+            <h2>DATA SISWA PROGRAM KEAHLIAN RPL</h2>
+            <div class="container">
+            <div class="card mt-3">
+            <h5 class="card-header bg-primary text-white">Data Siswa</h5>
+          </div>
+          <div class="card-body">
+    
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#modaltambah">
+                Tambah data
+              </button>
+    
+              <table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>NIS</th>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Jenis Kelamin</th>
+        <th>Alamat</th>
+    </tr>
+    </table>
+
+    <?php
+    // Koneksi ke database
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "database_webrpl";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Periksa koneksi
+    if ($conn->connect_error) {
+        die("Koneksi gagal: " . $conn->connect_error);
+    }
+
+    // Query SQL untuk mengambil data
+    $sql = "SELECT * FROM tb_siswa";
+    $result = $conn->query($sql);
+
+    // Periksa apakah ada baris data yang ditemukan
+    if ($result->num_rows > 0) {
+        // Output data setiap baris
+        while($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row["NIS"] . "</td>";
+            echo "<td>" . $row["Nama"] . "</td>";
+            echo "<td>" . $row["Kelas"] . "</td>";
+            echo "<td>" . $row["Jenis_Kelamin"] . "</td>";
+            echo "<td>" . $row["Alamat"] . "</td>";
+            echo "</tr>";
+        }
+    } else {
+        echo "<tr><td colspan='5'>Tidak ada data</td></tr>";
+    }
+
+    // Tutup koneksi database
+    $conn->close();
+    ?>
+
+</table>
+
+              <!-- Awal Modal -->
+              <div class="modal fade modal-lg" id="modaltambah" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Form data siswa</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form method="POST" action="crud_konek.php">
+                    <div class="modal-body">
+                        <form method="POST" action="crud_konek.php">
+    
+                          <div class="mb-3">
+                            <label class="form-label">NIS</label>
+                            <input type="text" class="form-control" name="tNIS" placeholder="Masukan NIS Anda">
+                          </div>
+    
+                          <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" name="tNama" placeholder="Masukan Nama Anda">
+                          </div>
+
+                          <div class="mb-3">
+                            <label class="form-label">Kelas</label>
+                            <input type="text" class="form-control" name="tKelas" placeholder="Masukan Kelas Anda">
+                          </div>
+    
+                          <div class="mb-3">
+                            <label class="form-label">Jenis_Kelamin</label>
+                            <textarea class="form-control" name="tJenis_Kelamin" rows="3"></textarea>
+                          </div>
+
+                          <div class="mb-3">
+                            <label class="form-label">Alamat</label>
+                            <textarea class="form-control" name="tAlamat" rows="3"></textarea>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary" name="bsimpan">Simpan</button>
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+        
+<section id="jadwals" class="dashboard-item" style="display: none">
+  <h2>Jadwal Pelajaran</h2>
+  <body>
+      <table slide="1">
+        <thead>
+          <tr>
+            <th>HARI</th>
+            <th>JADWAL PELAJARAN</th>
+            <th>JAM PELAJARAN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SENIN</td>
+            <td>PEMOGRAMAN WEB & MATEMATIKA</td>
+            <td> 07:00-15:15</td>
+          </tr>
+          <tr>
+            <td>SELASA</td>
+            <td>PEMOGRAMAN BERBASIS OBJEK & BAHASA INDONESIA</td>
+            <td> 07:00-15:00</td>
+          </tr>
+          <tr>
+            <td>RABU</td>
+            <td>PENDIDIKAN KEWARGANEGARAAN & PRODUK KREATIF KEWIRAUSAHAAN</td>
+            <td> 07:00-15:00</td>
+          </tr>
+          <tr>
+            <td>KAMIS</td>
+            <td>PEMOGRAMAN WEB & BAHASA INGGRIS & BASIS DATA</td>
+            <td> 07:00-15:00</td>
+          </tr>
+          <tr>
+            <td>JUM'AT</td>
+            <td>BAHASA INGGRIS & PEMOGRAMAN WEB & PABP & HHPS</td>
+            <td> 07:00-17:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </section>
+
+      <script>
+        const homeLink = document.getElementById("home-link");
+        const tentangLink = document.getElementById("tentang-link");
+        const coursesLink = document.getElementById("courses-link");
+        const eventsLink = document.getElementById("events-link");
+        const gurusLink = document.getElementById("gurus-link");
+        const siswasLink = document.getElementById("siswas-link");
+        const jadwalsLink = document.getElementById("jadwals-link");
+
+        const homeSection = document.getElementById("home");
+        const tentangSection= document.getElementById("tentang");
+        const coursesSection = document.getElementById("courses");
+        const eventsSection = document.getElementById("events");
+        const gurusSection = document.getElementById("gurus");
+        const siswasSection = document.getElementById("siswas");
+        const jadwalsSection = document.getElementById("jadwals");
+
+        homeLink.addEventListener("click", function () {
+          homeSection.style.display = "block";
+          tentangSection.style.display = "none";
+          coursesSection.style.display = "none";
+          eventsSection.style.display = "none";
+          gurusSection.style.display = "none";
+          siswasSection.style.display = "none";
+          jadwalsSection.style.display = "none";
+        });
+
+        coursesLink.addEventListener("click", function () {
+          homeSection.style.display = "none";
+          tentangSection.style.display = "none";
+          coursesSection.style.display = "block";
+          eventsSection.style.display = "none";
+          gurusSection.style.display = "none";
+          siswasSection.style.display = "none";
+          jadwalsSection.style.display = "none";
+        });
+
+        eventsLink.addEventListener("click", function () {
+          homeSection.style.display = "none";
+          tentangSection.style.display = "none";
+          coursesSection.style.display = "none";
+          eventsSection.style.display = "block";
+          gurusSection.style.display = "none";
+          siswasSection.style.display = "none";
+          jadwalsSection.style.display = "none";
+        });
+
+        gurusLink.addEventListener("click", function () {
+          homeSection.style.display = "none";
+          tentangSection.style.display = "none";
+          coursesSection.style.display = "none";
+          eventsSection.style.display = "none";
+          gurusSection.style.display = "block";
+          siswasSection.style.display = "none";
+          jadwalsSection.style.display = "none";
+        });
+
+        siswasLink.addEventListener("click", function () {
+          homeSection.style.display = "none";
+          tentangSection.style.display = "none";
+          coursesSection.style.display = "none";
+          eventsSection.style.display = "none";
+          gurusSection.style.display = "none";
+          siswasSection.style.display = "block";
+          jadwalsSection.style.display = "none";
+        });
+
+        jadwalsLink.addEventListener("click", function () {
+          homeSection.style.display = "none";
+          tentangSection.style.display = "none";
+          coursesSection.style.display = "none";
+          eventsSection.style.display = "none";
+          gurusSection.style.display = "none";
+          jadwalsSection.style.display = "block";
+          siswasSection.style.display = "none";
+        });
+
+        tentangLink.addEventListener("click", function () {
+          homeSection.style.display = "none";
+          tentangSection.style.display = "block";
+          coursesSection.style.display = "none";
+          eventsSection.style.display = "none";
+          gurusSection.style.display = "none";
+          siswasSection.style.display = "none";
+          jadwalsSection.style.display = "none";
+        });
+
+        const XRPL1Link = document.getElementById("XRPL1");
+        const XRPL2Link = document.getElementById("XRPL2");
+        const XRPL3Link = document.getElementById("XRPL3");
+        const XIRPL1Link = document.getElementById("XIRPL1");
+        const XIRPL2Link = document.getElementById("XIRPL2");
+        const XIRPL3Link = document.getElementById("XIRPL3");
+        const XIIRPL1Link = document.getElementById("XIIRPL1");
+        const XIIRPL2Link = document.getElementById("XIIRPL2");
+        const XIIRPL3Link = document.getElementById("XIIRPL3");
+
+        const XRPL1Section = document.getElementById("XRPL1");
+        const XRPL2Section = document.getElementById("XRPL2");
+        const XRPL3Section = document.getElementById("XRPL3");
+        const XIRPL1Section = document.getElementById("XIRPL1");
+        const XIRPL2Section = document.getElementById("XIRPL2");
+        const XIRPL3Section = document.getElementById("XIRPL3");
+        const XIIRPL1Section = document.getElementById("XIIRPL1");
+        const XIIRPL2Section = document.getElementById("XIIRPL2");
+        const XIIRPL3Section = document.getElementById("XIIRPL3");
+
+        XRPL1Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "block";
+          XRPL2Section.style.display = "none";
+          XRPL3Section.style.display = "none";
+          XIRPL1Section.style.display = "none";
+          XIRPL2Section.style.display = "none";
+          XIRPL3Section.style.display = "none";
+          XIIRPL1Section.style.display = "none";
+          XIIRPL2Section.style.display = "none";
+          XIIRPL3Section.style.display = "none";
+        });
+
+        XRPL2Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "none";
+          XRPL2Section.style.display = "block";
+          XRPL3Section.style.display = "none";
+          XIRPL1Section.style.display = "none";
+          XIRPL2Section.style.display = "none";
+          XIRPL3Section.style.display = "none";
+          XIIRPL1Section.style.display = "none";
+          XIIRPL2Section.style.display = "none";
+          XIIRPL3Section.style.display = "none";
+        });
+
+        XRPL3Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "none";
+          XRPL2Section.style.display = "none";
+          XRPL3Section.style.display = "block";
+          XIRPL1Section.style.display = "none";
+          XIRPL2Section.style.display = "none";
+          XIRPL3Section.style.display = "none";
+          XIIRPL1Section.style.display = "none";
+          XIIRPL2Section.style.display = "none";
+          XIIRPL3Section.style.display = "none";
+        });
+
+        XIRPL1Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "none";
+          XRPL2Section.style.display = "none";
+          XRPL3Section.style.display = "none";
+          XIRPL1Section.style.display = "block";
+          XIRPL2Section.style.display = "none";
+          XIRPL3Section.style.display = "none";
+          XIIRPL1Section.style.display = "none";
+          XIIRPL2Section.style.display = "none";
+          XIIRPL3Section.style.display = "none";
+        });
+
+        XIRPL2Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "none";
+          XRPL2Section.style.display = "none";
+          XRPL3Section.style.display = "none";
+          XIRPL1Section.style.display = "none";
+          XIRPL2Section.style.display = "block";
+          XIRPL3Section.style.display = "none";
+          XIIRPL1Section.style.display = "none";
+          XIIRPL2Section.style.display = "none";
+          XIIRPL3Section.style.display = "none";
+        });
+
+        XIRPL3Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "none";
+          XRPL2Section.style.display = "none";
+          XRPL3Section.style.display = "none";
+          XIRPL1Section.style.display = "none";
+          XIRPL2Section.style.display = "none";
+          XIRPL3Section.style.display = "block";
+          XIIRPL1Section.style.display = "none";
+          XIIRPL2Section.style.display = "none";
+          XIIRPL3Section.style.display = "none";
+        });
+
+        XIIRPL1Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "none";
+          XRPL2Section.style.display = "none";
+          XRPL3Section.style.display = "none";
+          XIRPL1Section.style.display = "none";
+          XIRPL2Section.style.display = "none";
+          XIRPL3Section.style.display = "none";
+          XIIRPL1Section.style.display = "block";
+          XIIRPL2Section.style.display = "none";
+          XIIRPL3Section.style.display = "none";
+        });
+
+        XIIRPL2Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "none";
+          XRPL2Section.style.display = "none";
+          XRPL3Section.style.display = "none";
+          XIRPL1Section.style.display = "none";
+          XIRPL2Section.style.display = "none";
+          XIRPL3Section.style.display = "none";
+          XIIRPL1Section.style.display = "none";
+          XIIRPL2Section.style.display = "block";
+          XIIRPL3Section.style.display = "none";
+        });
+
+        XIIRPL3Link.addEventListener("click", function () {
+          XRPL1Section.style.display = "none";
+          XRPL2Section.style.display = "none";
+          XRPL3Section.style.display = "none";
+          XIRPL1Section.style.display = "none";
+          XIRPL2Section.style.display = "none";
+          XIRPL3Section.style.display = "none";
+          XIIRPL1Section.style.display = "none";
+          XIIRPL2Section.style.display = "none";
+          XIIRPL3Section.style.display = "block";
+        });
+      </script>
+    </header>
+    
+    <section class="content">
+      <!-- Konten utama sekolah ditambahkan disini -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RPL 5. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
