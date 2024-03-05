@@ -3,10 +3,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $nip = $_POST['tNIP'];
     $nama = $_POST['tNama'];
-    $kode_guru = $_POST['tKode_guru'];
-    $jenis_kelamin = $_POST['tGender'];
-    $guru_mapel = $_POST['tGuru_Mapel'];
+    $tempat_lahir = $_POST['tTempat_lahir'];
+    $tanggal_lahir = $_POST['tTanggal_lahir'];
+    $agama = $_POST['tAgama'];
+    $marital= $_POST['tMarital'];
     $alamat = $_POST['tAlamat'];
+    $nama_pt = $_POST['tNama_pt'];
+    $ijazah = $_POST['tIjazah'];
+    $lulus = $_POST['tLulus'];
+    $golongan = $_POST['tGolongan'];
+    $ket = $_POST['tKet'];
+    $jenis_kelamin = $_POST['tGender'];
     
     // Database connection
     $servername = "localhost"; // Change this to your server name
@@ -23,9 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare and bind the SQL statement
-    $sql = "INSERT INTO tb_guru (NIP, Nama, Kode_guru, Jenis_Kelamin, Guru_Mapel, Alamat) VALUES (?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO tb_guru (NIP, Nama, Tempat_lahir, Tanggal_lahir, Agama, Marital, Alamat, Nama_pt, Ijazah, Lulus, Golongan, Ket, Jenis_Kelamin) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssss", $nip, $nama, $kode_guru, $jenis_kelamin, $guru_mapel, $alamat );
+    $stmt->bind_param("sssssssssssss", $nip, $nama, $tempat_lahir, $tanggal_lahir, $agama, $marital, $alamat, $nama_pt, $ijazah, $lulus, $golongan, $ket, $jenis_kelamin);
 
     // Execute the statement
     if ($stmt->execute()) {

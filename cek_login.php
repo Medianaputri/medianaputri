@@ -27,7 +27,7 @@ if($cek > 0){
  $_SESSION['username'] = $username;
  $_SESSION['level'] = "administrator";
  // alihkan ke halaman dashboard admin
- header("location:administrator.php");
+ header("location:WEB5.php");
  
  // cek jika user login sebagai pegawai
  }else if($data['level']=="guru"){
@@ -35,7 +35,7 @@ if($cek > 0){
  $_SESSION['username'] = $username;
  $_SESSION['level'] = "guru";
  // alihkan ke halaman dashboard pegawai
- header("location:guru.php");
+ header("location:L_guru.php");
  
  // cek jika user login sebagai pengurus
  }else if($data['level']=="siswa"){
@@ -52,12 +52,12 @@ if($cek > 0){
     // alihkan ke halaman dashboard pegawai
     header("location:staff.php");
 
- }else if($data['level']=="orang tua"){
+ }else if($data['level']=="orangtua"){
     // buat session login dan username
     $_SESSION['username'] = $username;
-    $_SESSION['level'] = "orang tua";
+    $_SESSION['level'] = "orangtua";
     // alihkan ke halaman dashboard pegawai
-    header("location:orang_tua.php");
+    header("location:orangtua.php");
  
 }else if($data['level']=="admin sekolah"){
     // buat session login dan username

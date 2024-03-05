@@ -174,14 +174,14 @@
         background-color: #f2f2f2;
       }
 
+
       #siswas h2 {
         color: black;
         font-size: 24px;
         margin-bottom: 20px;
          text-align: center;
     }
-    
-#SISWA
+
 
 .inner-box {
     border: 1px solid #ccc;
@@ -526,8 +526,35 @@ button[type="submit"]:hover {
                     <label class="form-label">Nama</label>
                     <input type="text" class="form-control" name="tNama" placeholder="Masukkan Nama Anda">
                     
-                    <label class="form-label">Kode_guru</label>
-                    <input type="text" class="form-control" name="tKode_guru" placeholder="Masukkan Kode Anda">
+                    <label class="form-label">Tempat_lahir</label>
+                    <input type="text" class="form-control" name="tTempat_lahir" placeholder="Masukkan tempat lahir Anda">
+
+                    <label class="form-label">Tanggal_lahir</label>
+                    <input type="text" class="form-control" name="tTanggal_lahir" placeholder="Masukkan tanggal lahir Anda">
+
+                    <label class="form-label">Agama</label>
+                    <input type="text" class="form-control" name="tAgama" placeholder="Masukkan Agama Anda">
+
+                    <label class="form-label">Marital</label>
+                    <input type="text" class="form-control" name="tMarital" placeholder="Masukkan Marital Anda">
+
+                    <label class="form-label">Alamat</label> <!-- Moved label here -->
+                    <textarea class="form-control" name="tAlamat" placeholder="Masukkan Alamat Anda"></textarea>
+                    
+                    <label class="form-label">Nama_pt</label>
+                    <input type="text" class="form-control" name="tNama_pt" placeholder="Masukkan Nama PT Anda">
+
+                    <label class="form-label">Ijazah</label>
+                    <input type="text" class="form-control" name="tIjazah" placeholder="Masukkan Ijazah Anda">
+                    
+                    <label class="form-label">Lulus</label>
+                    <input type="text" class="form-control" name="tLulus" placeholder="Masukkan Lulus Anda">
+                    
+                    <label class="form-label">Golongan</label>
+                    <input type="text" class="form-control" name="tGolongan" placeholder="Masukkan Golongan Anda">
+
+                    <label class="form-label">Ket</label>
+                    <input type="text" class="form-control" name="tKet" placeholder="Masukkan Ket Anda">
 
                     <label class="form-label">Jenis Kelamin</label>
                     <select class="form-control" name="tGender">
@@ -535,25 +562,6 @@ button[type="submit"]:hover {
                         <option value="Laki-laki">Laki-laki</option>
                         <option value="Perempuan">Perempuan</option>
                     </select>
-
-                    <label class="form-label">Guru_Mapel</label>
-                    <select class="form-control" name="tGuru_Mapel">
-                    <option value="Option">Option</option>
-                        <option value="Pemrograman Web">Pemrograman Web</option>
-                        <option value="Basis Data">Basis Data</option>
-                        <option value="Pemrograman Berorientasi Objek">Pemrograman Berorientasi Objek</option>
-                        <option value="HHPS">HHPS</option>
-                        <option value="Pemdas">Pemograman Dasar</option>
-                        <option value="(DDG)">Desain Grafis(DDG)</option>
-                        <option value="Informatika">Informatika</option>
-                        <option value="IOT">Internet Of Thinks(IOT)</option>
-                        <option value="PKK">Produk Kreatif dan Kewirausahaan(PKK)</option>
-
-
-                    </select>
-                    
-                    <label class="form-label">Alamat</label> <!-- Moved label here -->
-                    <textarea class="form-control" name="tAlamat" placeholder="Masukkan Alamat Anda"></textarea>
                     
                     <button type="submit">Tambah Guru</button>
                     
@@ -564,10 +572,17 @@ button[type="submit"]:hover {
         <tr>
             <th>NIP</th>
             <th>Nama</th>
-            <th>Kode_guru</th>
-            <th>Jenis Kelamin</th>
-            <th>Guru_Mapel</th>
+            <th>Tempat lahir</th>
+            <th>Tanggal lahir</th>
+            <th>Agama</th>
+            <th>Marital</th>
             <th>Alamat</th>
+            <th>Nama PT</th>
+            <th>Ijazah</th>
+            <th>Lulus</th>
+            <th>Golongan</th>
+            <th>Ket</th>
+            <th>Jenis Kelamin</th>
             <th>Aksi</th>
         </tr>
     </thead>
@@ -584,10 +599,17 @@ button[type="submit"]:hover {
                 echo "<tr>";
                 echo "<td>" . $row['NIP'] . "</td>";
                 echo "<td>" . $row['Nama'] . "</td>";
-                echo "<td>" . $row['Kode_guru'] . "</td>";
-                echo "<td>" . $row['Jenis_Kelamin'] . "</td>";
-                echo "<td>" . $row['Guru_Mapel'] . "</td>";
+                echo "<td>" . $row['Tempat_lahir'] . "</td>";
+                echo "<td>" . $row['Tanggal_lahir'] . "</td>";
+                echo "<td>" . $row['Agama'] . "</td>";
+                echo "<td>" . $row['Marital'] . "</td>";
                 echo "<td>" . $row['Alamat'] . "</td>";
+                echo "<td>" . $row['Nama_pt'] . "</td>";
+                echo "<td>" . $row['Ijazah'] . "</td>";
+                echo "<td>" . $row['Lulus'] . "</td>";
+                echo "<td>" . $row['Golongan'] . "</td>";
+                echo "<td>" . $row['Ket'] . "</td>";
+                echo "<td>" . $row['Jenis_Kelamin'] . "</td>";
                 echo "<td>";
                 echo "<a href='edit.php?NIP=" . $row['NIP'] . "'>Edit</a>";
                 echo " | ";

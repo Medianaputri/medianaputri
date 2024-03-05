@@ -43,23 +43,8 @@ h1, h2 {
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 20px;
     box-sizing: border-box;
-}
-
-/* Style for form submit button */
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049;
 }
 
 /* Style for table */
@@ -70,18 +55,15 @@ table {
 }
 
 /* Style for table headers */
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
 th {
     background-color: #4CAF50;
     color: white;
     font-weight: bold;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Style for table cells */
-td {
-    text-align: center;
-    padding: 10px;
 }
 
 /* Style for logout link */
